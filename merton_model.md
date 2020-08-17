@@ -64,7 +64,7 @@ Although I am sure that there is no real use for such a construction, it is inte
 
 When putting the correct Brownian motion throught this standard deviation test, it is reassuring to see that the fineness of the discretiastion does not yield such a patter, with R values restign around the ~0.05 range.
 
-'''python
+```python
 fig,ax = plt.subplots(2,1,figsize=(16,16))
 dic = {}
 
