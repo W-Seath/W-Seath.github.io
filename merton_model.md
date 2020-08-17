@@ -65,4 +65,4 @@ Although I am sure that there is no real use for such a construction, it is inte
 When putting the correct Brownian motion throught this standard deviation test, it is reassuring to see that the fineness of the discretiastion does not yield such a patter, with R values restign around the ~0.05 range.
 
 
-<img src ="images/basic stochastic constructions/undrifted brownian.jpeg?raw=true">
+<img src ="images/basic stochastic constructions/brownian motion.png?raw=true">
