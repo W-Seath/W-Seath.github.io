@@ -91,6 +91,6 @@ ax[1].set_title('Standard Deviation of Brownian Motion model vs fineness of mesh
 print('Slope: '+str(slope))
 print('R-Value: '+str(r_value))
 ax[1].legend()
-'''
+```
 
 <img src ="images/basic stochastic constructions/brownian motion.png?raw=true">
