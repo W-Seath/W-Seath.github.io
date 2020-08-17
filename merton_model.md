@@ -64,5 +64,33 @@ Although I am sure that there is no real use for such a construction, it is inte
 
 When putting the correct Brownian motion throught this standard deviation test, it is reassuring to see that the fineness of the discretiastion does not yield such a patter, with R values restign around the ~0.05 range.
 
+'''python
+fig,ax = plt.subplots(2,1,figsize=(16,16))
+dic = {}
+
+for n in range(1,100):
+    ax[0].plot(BM(0,0,0.2,n/1000,10))
+    
+    point = np.std(BM(0,0.1,0.2,n/1000,10))
+    dic[n]=point
+    
+    ax[1].scatter(n,point,alpha=0.7)
+    
+ser = pd.Series(dic)
+
+ax[0].set_title('Brownian motion with 0 drift and volatility 0.2')
+    
+slope, intercept, r_value, p_value, std_err = stats.linregress(ser.index,ser)
+
+x = np.linspace(0,1000,150)
+y = slope*x + intercept
+ax[1].plot(x,y,label='Linear Regression Line',lw=5,color='k')
+ax[1].set_xlim(0,100)
+ax[1].set_title('Standard Deviation of Brownian Motion model vs fineness of mesh')
+
+print('Slope: '+str(slope))
+print('R-Value: '+str(r_value))
+ax[1].legend()
+'''
 
 <img src ="images/basic stochastic constructions/brownian motion.png?raw=true">
