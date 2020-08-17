@@ -1,6 +1,6 @@
 ## Python constructions of Brownian motion, and a Poisson Process
 
-**Project description:** The aim of this mini-project is to develop efficient python functions for Brownian motion and for the poisson process used in Robert C Merton's jump diffusion model. Utilising mostly numpy and pandas libraries, with the output being a pandas series object. Both the fineness of the infinitesimal approximation and the length of the process are taken as inputs, to allow a user to balance efficiency and accuracy depending on their needs. 
+**Project description:** The aim of this mini-project is to develop efficient python functions for Brownian motion and for the poisson process used in Robert C Merton's jump diffusion model. Utilising mostly numpy and pandas libraries, with the output being a pandas series object. Both the fineness of the infinitesimal approximation and the length of the process are taken as inputs, to allow a user to balance efficiency and accuracy depending on their needs (this page is still a work in progress). 
 
 ### 1. Brownian Motion
 
