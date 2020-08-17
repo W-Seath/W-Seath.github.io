@@ -28,5 +28,5 @@ for n in range(0,100):
     toc = time.time()
     times.append(toc-tic)
 ```
-<img src ="images/hundred_brownian_motions_histo.jpeg?raw=true">
+<img src ="images/hundred brownian motions histo.png?raw=true">
 
