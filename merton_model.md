@@ -57,10 +57,12 @@ plt.ylabel('Standard Deviation')
 ax.legend(loc=0)
 ```
 The above code provides the below plot, with the R value in this case 0.6218, and that is a fairly typical value from running a couple of informal tests.
+
 <img src ="images/basic stochastic constructions/failed brownian.png?raw=true">
 
 Although I am sure that there is no real use for such a construction, it is intersting to take note of it, and it lends insight into the nature of the discretisation for the 'real' Brownian motion.
 
 When putting the correct Brownian motion throught this standard deviation test, it is reassuring to see that the fineness of the discretiastion does not yield such a patter, with R values restign around the ~0.05 range.
+
 
 <img scr ="images/basic stochastic constructions/undrifted brownian.jpeg?raw=true">
