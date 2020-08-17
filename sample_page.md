@@ -1,15 +1,20 @@
-## This can be your internal website page / project page
+## Python constructions of Brownian motion, and a Poisson Process
 
-**Project description:** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**Project description:** Python functions for Brownian motion and for the poisson process used in Robert C Merton's jump diffusion model. The exponent used to model asset returns is also included. This is still a work in progress.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+### 1. Brownian Motion
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Using $S_0$ to denote the process at time $t$, wiht as By using numpy, the cumulative sumation can be performed incredibly quickly, with almost instantaneous  
 
-```javascript
-if (isAwesome){
-  return true
-}
+```python
+def BM(S_0,mu,sigma,dt,T):
+    
+    out = pd.Series(S_0)
+    out = out.append(pd.Series(np.cumsum(mu*dt + sigma*np.sqrt(dt)*np.random.normal(0,1,int(T/dt)))),ignore_index=True)
+    
+    out.index = np.linspace(0,T,int(T/dt + 1))
+    
+    return out
 ```
 
 ### 2. Assess assumptions on which statistical inference will be based
