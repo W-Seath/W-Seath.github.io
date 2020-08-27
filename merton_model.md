@@ -94,3 +94,9 @@ ax[1].legend()
 ```
 
 <img src ="images/basic stochastic constructions/brownian motion.png?raw=true">
+
+# hello Michael
+```python
+print(Michael is very cool)
+```
+
